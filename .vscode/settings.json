@@ -1,0 +1,12 @@
+{
+    "diffEditor.renderSideBySide": false,
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
