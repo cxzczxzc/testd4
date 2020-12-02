@@ -2,7 +2,7 @@ import re
 class Registration:
     #not implemented
     def create_account(self, email, name, password):
-        return NotImplementedError 
+        return NotImplemented 
     
     def verify_email(self, email):
         regex = "^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$"
@@ -73,16 +73,16 @@ class Registration:
             return False
     #Not possible to implement at all as it requires UI interaction
     def successful_login(self, user):
-        return NotImplementedError 
+        return NotImplemented 
     #Not possible to implement as it requires UI interaction
     def lock_account_after_5_login_attempts(self, count):
-        return NotImplementedError
+        return NotImplemented
     #Not possible to implement as it requires UI interaction
     def display_locked_account_error_message(self, message):
-        return NotImplementedError 
+        return NotImplemented 
     #Not possible to implement as it requires UI interaction
     def check_forgotten_password_button(self, button):
-        return NotImplementedError 
+        return NotImplemented 
 
     def check_email_and_phonenumber(self, email, phonenumber):
         valid_email = "big@boss.com" #email and phone number would come from the database, which aren't implemented
@@ -95,4 +95,4 @@ class Registration:
     #user object will be used to do so
     #not implemented because user object doesn't exist
     def generate_password_reset_link(self, user):
-        return NotImplementedError
+        return NotImplemented
