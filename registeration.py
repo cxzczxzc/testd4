@@ -2,7 +2,7 @@ import re
 class Registration:
     #not implemented
     def create_account(self, email, name, password):
-        return None 
+        return NotImplementedError 
     
     def verify_email(self, email):
         regex = "^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$"
