@@ -81,7 +81,7 @@ class Registration:
     def display_locked_account_error_message(self, message):
         return NotImplementedError 
     #Not possible to implement as it requires UI interaction
-    def check_forgottem_password_button(self, button):
+    def check_forgotten_password_button(self, button):
         return NotImplementedError 
 
     def check_email_and_phonenumber(self, email, phonenumber):

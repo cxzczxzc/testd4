@@ -80,7 +80,7 @@ def test_account_locked_error_message():
 def test_forgotten_password_button():
     button = None #UI element needed here, which isn't possible 
     reg = Registration()
-    assert reg.check_forgottem_password_button(button) == True, "Forgotten password button not available!"
+    assert reg.check_forgotten_password_button(button) == True, "Forgotten password button not available!"
 
 #Requirement 7.2.3
 def test_valid_email_and_phone_for_password_reset_request():
