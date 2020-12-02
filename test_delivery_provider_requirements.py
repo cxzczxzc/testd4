@@ -1,6 +1,6 @@
 from testd4.deliveryprovider import DeliveryProvider
 
-#Requirement 7.2.4
+#Requirement 7.2.4 - Link accounts with UberEats and other delivery providers
 def test_currently_configured_delivery_provider():
     invalid_delivery_providers = ["SkipTheDishes", "Foodora", "Instacart"]
     for dp_name in invalid_delivery_providers:

@@ -52,7 +52,7 @@ def test_oauth_token_received():
         reg = Registration()
         assert reg.verify_oauth_token_received(response) == True, "Invalid HTTP response received"
 
-#Requirement 7.2.1
+#Requirement 7.2.1 - Account Login
 def test_login_credentials():
     invalid_credentials = {"invalid_username","invalid_password"}
     reg = Registration()
@@ -76,13 +76,13 @@ def test_account_locked_error_message():
         reg = Registration()
         assert reg.display_locked_account_error_message(message) == True, "Account lockout error message not correct!"
 
-#Requirement 7.2.2
+#Requirement 7.2.2 - Forgotten Password
 def test_forgotten_password_button():
     button = None #UI element needed here, which isn't possible 
     reg = Registration()
     assert reg.check_forgotten_password_button(button) == True, "Forgotten password button not available!"
 
-#Requirement 7.2.3
+#Requirement 7.2.3 - Reset Forgotten Password
 def test_valid_email_and_phone_for_password_reset_request():
     invalid_phone_numbers = ["lalalala", "hahahaha", "blablablablabla"]
     invalid_emails = ["a@b.com" ,"d@e.com", "x@y.com"]
