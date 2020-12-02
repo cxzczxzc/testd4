@@ -17,12 +17,15 @@ def test_password_complexity():
         reg = Registration()
         assert reg.verify_password_complexity(password) == True , "Invalid password supplied"
 
+#Requirement #7.1.1 - Account creation requirements 
 def test_email_validity():
     invalid_emails = ["not", "a", "valid", "email"]  
 
     for email in invalid_emails:
         reg = Registration()
         assert reg.verify_email(email) == True , "Invalid password supplied"
+
+#Requirement #7.1.1 - Account creation requirements 
 def test_phonenumber_validity():
     invalid_phone_numbers = ["asdsa", "121", "00000"]
 
@@ -70,6 +73,7 @@ def test_relogin_attempts():
     reg = Registration()
     assert reg.lock_account_after_5_login_attempts(count) == True, "Account not locked out after more than 5 attempts"
 
+#Requirement 7.2.1.2 - can't test send password reset email functionality
 def test_account_locked_error_message():
     invalid_errors = ["Your account is locked", "Thou art banished from thine account"]
     for message in invalid_errors:
