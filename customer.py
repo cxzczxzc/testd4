@@ -19,6 +19,7 @@ class Customer:
         return NotImplementedError
     #this method should take the menu items and generate a list suited for the customer
     #then it will save that to the database
+    #it will return a response message indicating success if everything goes well 
     def generate_custom_menu(self, dietary_restriction, dietary_preference, customer_id, menu_items):
         return NotImplementedError
     #this method should check if the customer is eligible for deal of the day offer 

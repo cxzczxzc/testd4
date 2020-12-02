@@ -44,5 +44,6 @@ def test_check_eligibility_for_deal_of_day():
 
 def test_view_deals_of_the_day():
     customer_id = 12
+    expected_deals_of_the_day = ["Chicken Sandwich", "Grilled Salmon"]
     cus = Customer()
-    assert type(cus.view_deals_of_the_day(customer_id)) == list, "Deals of the day not found for the customer!"
+    assert cus.view_deals_of_the_day(customer_id) == expected_deals_of_the_day, "Deals of the day not found for the customer!"

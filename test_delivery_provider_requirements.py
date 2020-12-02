@@ -8,9 +8,9 @@ def test_currently_configured_delivery_provider():
         assert dp.get_delivery_provider(dp_name) == True, "Invalid delivery provider configured!"
 
 def test_deliver_with_uber_eats_button():
-    button_text = "Order with UberEats"
+    expected_button_text = "Order with UberEats"
     dp = DeliveryProvider()
-    assert dp.generate_button_for_delivery == button_text, "Invalid button text specified!"
+    assert dp.generate_button_for_delivery == expected_button_text, "Invalid button text specified!"
 
 def test_set_delivery_provider():
     delivery_providers = ["UberEats", "SkipTheDishes", "Foodora"]
