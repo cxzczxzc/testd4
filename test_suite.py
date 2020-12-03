@@ -6,15 +6,7 @@ from testd4.orders import Orders
 from testd4.customer import Customer
 from testd4.deliveryprovider import DeliveryProvider
 
-######################################################################
-# In a real life implementation, this class will deal with HTTP 
-# requests and responses to determine successful user registration
-# For the sake of this deliverable, we have mocked the expected HTTP 
-# request/response values to showcase the desired functionality 
-# and address the requirements
-
-# REQUIREMENTS TESTED: 
-######################################################################
+#The tests on Registration are performed using make believe scenarios of working with HTTP requests
 
 #Requirement #5.1.1 - Account creation requirements 
 def test_password_complexity():
