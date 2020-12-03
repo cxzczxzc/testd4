@@ -1,4 +1,6 @@
 class RestaurantStaff:
+    def __init__(self, employee_id=None):
+        self.employee_id = employee_id if employee_id is not None else None
     #this method should allow the restaurant staff to create deal of the day for all users 
     def create_deal_of_the_for_all_customers(self, menu_item, discounted_price):
         return NotImplemented

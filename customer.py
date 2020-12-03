@@ -1,4 +1,8 @@
 class Customer:
+    def __init__(self, customer_id, dietary_preferences = None, dietary_restrictions = None):
+        self.customer_id = customer_id
+        self.dietary_preferences = dietary_preferences if dietary_preferences is not None else None
+        self.dietary_restrictions = dietary_restrictions if dietary_restrictions is not None else None
     #This would save the dietary restrictions, like Halal, Kosher, etc. to the user's profile 
     def add_dietary_restrictions(self, dietary_restrictions, customer_id):
         return NotImplemented

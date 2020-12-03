@@ -55,6 +55,12 @@ class DeliveryProvider:
     #this method should return a list of cart items added to the delivery provider's list
     def get_delivery_provider_cart_items(self):
         return NotImplemented
-
-    
-
+    #this method should take the order_id, and employee_id of the restaurant staff member
+    #and call the delivery provider API to get the remaining arrival time of the driver
+    def check_driver_arrival_time_status(self, order_id, employee_id):
+        return NotImplemented
+    #this method should calculate the remaining time in hours, minutes, and seconds
+    #this method takes the expected arrival time of the driver subtracts that from the
+    #current time to get the remaining time
+    def calcualate_remaining_time_for_delivery_pickup(self, delivery_time):
+        return NotImplemented
